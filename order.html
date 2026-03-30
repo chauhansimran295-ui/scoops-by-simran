@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Ice Cream Order Form</title>
+    <style>
+        body
+ {
+            font-family: Arial, sans-serif;
+            background: #fff5f7;
+            justify-content: center;
+            align-item:"center"
+            height=100vh
+             }
+
+        .form-container {
+            background: pink;
+            padding: 20px 30px;       
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff4d6d;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        </style>
+</head>
+<body style="background-image:url('strawberry.png');">
+
+
+<div class="form-container">
+    <h2>Order Ice Cream 🍨</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your number" required>
+
+        <label>Select Flavor</label>
+        <select required>
+            <option value="">--Choose Flavor--</option>
+            <option>Chocolate</option>
+            <option>Vanilla</option>
+            <option>Strawberry</option>
+            <option>Butterscotch</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" min="1" value="1" required>
+
+        <label>Choose Size</label>
+        <select required>
+            <option value="">--Select Size--</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+
+        <label>Extra Toppings</label><br>
+        <input type="checkbox"> Chocolate Chips  <br>
+        <input type="checkbox">  Nuts <br>
+        <input type="checkbox"> Caramel Syrup <br><br>
+        <label>Delivery Address</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+</body>
+</html>
